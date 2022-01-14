@@ -20,7 +20,11 @@ def main():
 
     pick: Issue = random.choice([msc for msc in mscs])
 
-    print(f"Your random MSC is {pick.title} - {pick.html_url}")
+    print(f"""
+## Random MSC of the Week
+
+The random MSC of the week is... [{pick.title}]({pick.html_url})!
+""")
 
 
 if __name__ == '__main__':
